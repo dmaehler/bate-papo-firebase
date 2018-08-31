@@ -1,0 +1,8 @@
+<div class="container">
+  <label>Salas</label>
+  <ul class="rooms-list">
+    <li *ngFor="let room of rooms | async" class="room-item">
+      <a routerLinkActive="active" routerLink="/{{room.id}}">{{ room.name }}</a>
+    </li>
+  </ul>
+</div>

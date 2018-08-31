@@ -1,0 +1,19 @@
+.container {
+    padding: 12px;
+}
+
+.rooms-list {
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.room-item {
+    margin: 0;
+    padding: 4px 8px;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 110%;
+}

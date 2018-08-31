@@ -1,0 +1,20 @@
+.container {
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin: 12px;
+}
+
+.chat {
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 12px;
+}

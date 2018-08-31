@@ -1,0 +1,8 @@
+<form class="container" novalidate (submit)="setUsername()">
+  <div class="form-group">
+    <label for="username">Nome de usuário</label>
+    <input [(ngModel)]="userName" [class.saved]="userSaved" class="username form-control" name="username" (input)="userSaved = false;">
+  </div>
+  <button class="btn btn-primary float-right" (click)="setUsername()">OK</button>
+  <div class="clearfix"></div>
+</form>

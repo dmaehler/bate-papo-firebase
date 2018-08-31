@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="title">
+    <h1>{{ (room | async)?.name }}</h1>
+  </div>
+  <div #messagesContainer class="message-container">
+    <div class="message-item" *ngFor="let message of messages | async">
+      <small class="message-sender">{{ message.sender }}</small>
+      <div class="message-text">{{ message.text }}</div>
+    </div>
+  </div>
+  <div class="write-message">
+    <textarea [(ngModel)]="message" (keyup.enter)="onEnter($event)"></textarea>
+    <button class="btn btn-outline-primary" (click)="sendMessage()">Enviar</button>
+  </div>
+</div>
